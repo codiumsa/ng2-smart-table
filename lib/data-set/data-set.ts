@@ -138,11 +138,13 @@ export class DataSet {
 
   /**
    * Create rows based on current data prepared in data source
+   * Add attribute idx for each row element, where idx is the row number
    * @private
    */
   createRows() {
     this.rows = [];
     this.data.forEach((el, index) => {
+      el.idx = index + 1;
       this.rows.push(new Row(index, el, this));
     });
   }
