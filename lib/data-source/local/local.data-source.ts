@@ -9,7 +9,7 @@ export class LocalDataSource extends DataSource {
   protected data: Array<any> = [];
   protected filteredAndSorted: Array<any> = [];
   protected sortConf: Array<any> = [];
-  protected filterConf: any = {
+  public filterConf: any = {
     filters: [],
     andOperator: true,
   };
