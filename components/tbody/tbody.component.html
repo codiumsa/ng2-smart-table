@@ -29,7 +29,7 @@
 </tr>
 
 <tr *ngIf="grid.getRows().length == 0">
-    <td [attr.colspan]="grid.getColumns().length + (isActionAdd || isActionEdit || isActionDelete)">
+    <td [attr.colspan]="grid.getColumns().length + 1">
         {{ noDataMessage }}
     </td>
 </tr>
